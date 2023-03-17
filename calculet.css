@@ -1,0 +1,33 @@
+.chiffre {
+    grid-area: chiffre;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(4, 80px);
+    column-gap: 3px;
+    text-align: center;
+
+}
+
+p {
+
+    border: 1px solid black;
+    background-color: rgb(192, 168, 229);
+
+}
+
+.operator {
+    grid-area: operator;
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: repeat(4, 80px);
+
+}
+
+.calculette {
+    display: grid;
+
+    grid-template-areas: "chiffre operator";
+    grid-template-columns: 150px 50px;
+    column-gap: 9px;
+    text-align: center;
+}
